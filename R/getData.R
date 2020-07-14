@@ -294,7 +294,7 @@ ccodes <- function() {
 			bilfiles <- paste(var, 1:19, '_', rc, '.bil', sep='')
 			hdrfiles <- paste(var, 1:19, '_', rc, '.hdr', sep='')		
 		}
-		theurl <- paste('https://biogeo.ucdavis.edu/data/climate/worldclim/1_4/tiles/cur/', zip, sep='')
+		theurl <- paste('https://biogeo.ucdavis.edu/data/worldclim/v2.1/base/', zip, sep='')
 	} else {
 		zip <- paste(var, '_', res, 'm_bil.zip', sep='')
 		zipfile <- paste(path, zip, sep='')
@@ -308,7 +308,7 @@ ccodes <- function() {
 			bilfiles <- paste(var, 1:19, '.bil', sep='')
 			hdrfiles <- paste(var, 1:19, '.hdr', sep='')	
 		}
-		theurl <- paste('https://biogeo.ucdavis.edu/data/climate/worldclim/1_4/grid/cur/', zip, sep='')
+		theurl <- paste('https://biogeo.ucdavis.edu/data/worldclim/v2.1/base/', zip, sep='')
 	}
 	files <- c(paste(path, bilfiles, sep=''), paste(path, hdrfiles, sep=''))
 	fc <- sum(file.exists(files))
